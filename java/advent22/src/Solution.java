@@ -40,7 +40,7 @@ public abstract class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println((new Day01()).getSolution());
+        System.out.println((new Day02()).getSolution());
     }
 
     /**
@@ -56,7 +56,7 @@ public abstract class Solution {
     /**
      * Returns a String, formatted for sysout, that contains the results of the solution for that day.
      */
-    public String getSolution() throws IOException {
+    public String getSolution() {
         // Temps
         double start;
         double elapsed;
@@ -81,12 +81,12 @@ public abstract class Solution {
      *
      * @return the answer as a String (so it doesn't have to be either int or long)
      */
-    public abstract String partOne() throws IOException;
+    public abstract String partOne();
 
     /**
      * Solves part two of the day's puzzle.
      *
      * @return the answer as a String (so it doesn't have to be either int or long)
      */
-    public abstract String partTwo() throws IOException;
+    public abstract String partTwo();
 }
