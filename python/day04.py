@@ -7,16 +7,16 @@ with utils.getInput(4) as f:
     
     for line in f:
         a = re.split(",|-", line.strip())
-        a = [int(b) for b in a]
+        [minA, maxA, minB, maxB] = [int(b) for b in a]
         
-        if (a[0] <= a[2] and a[1] >= a[3]):
+        if (minA <= minB and maxA >= maxB):
             starOne += 1
-        elif(a[2] <= a[0] and a[3] >= a[1]):
+        elif(minB <= minA and maxB >= maxA):
             starOne += 1
         
-        if (a[2] >= a[0] and a[1] >= a[2]):
+        if (minB >= minA and maxA >= minB):
             starTwo += 1
-        elif (a[0] >= a[2] and a[3] >= a[0]):
+        elif (minA >= minB and maxB >= minA):
             starTwo += 1
         
     print(starOne)
