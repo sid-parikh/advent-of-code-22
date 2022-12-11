@@ -40,7 +40,7 @@ public abstract class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        System.out.println((new Day02()).getSolution());
+        System.out.println(new Day07().getSolution());
     }
 
     /**
