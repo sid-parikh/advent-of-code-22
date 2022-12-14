@@ -1,7 +1,7 @@
 # first attempt to do a day straight in python
 import utils
 import re
-with utils.getInput(4) as f:
+with utils.get_input(4) as f:
     starOne = 0
     starTwo = 0
     

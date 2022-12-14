@@ -1,6 +1,6 @@
 import utils
 import re
-with utils.getInput(5) as f:
+with utils.get_input(5) as f:
     count = 0
     stacksStarOne = [
         list("GFVHPS"),

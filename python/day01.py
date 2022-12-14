@@ -1,7 +1,7 @@
 import utils
 
 # star one
-with utils.getInput(1) as f:
+with utils.get_input(1) as f:
     # read file into list of integers
     max = 0
     curr = 0
@@ -16,7 +16,7 @@ with utils.getInput(1) as f:
 print(max)
 
 # star two
-with utils.getInput(1) as f:
+with utils.get_input(1) as f:
     curr = 0
     nums = []
     for line in f:

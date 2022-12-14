@@ -2,7 +2,7 @@ import utils
 import collections
 
 commands = []
-with utils.getInput(10) as f:
+with utils.get_input(10) as f:
     for line in f:
         commands.append(line.strip())
     

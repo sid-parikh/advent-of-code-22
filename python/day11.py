@@ -31,14 +31,14 @@ for _ in range(10000):
         rule = monkey_rules[i]
         for n in mon:
             n = rule[0](n) % big_mod
-            
-            if (n % rule[1] == 0):
+
+            if n % rule[1] == 0:
                 monkeys[rule[2]].append(n)
             else:
                 monkeys[rule[3]].append(n)
-            
+
             counts[i] += 1
-        
+
         monkeys[i] = []
 
 # print product of two highest counts

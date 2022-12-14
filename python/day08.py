@@ -1,7 +1,7 @@
 import utils
 
 lines = [[int(c) for c in line.strip()]
-         for line in utils.getInput(8).readlines()]
+         for line in utils.get_input(8).readlines()]
 
 visible = [[False for _ in line] for line in lines]
 

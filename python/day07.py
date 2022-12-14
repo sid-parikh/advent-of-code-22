@@ -1,7 +1,7 @@
 import utils
 
 
-with utils.getInput(8) as f:
+with utils.get_input(8) as f:
     
     
     one = 0
